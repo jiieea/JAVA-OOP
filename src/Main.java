@@ -6,8 +6,11 @@ class Main {
         myObject.name = "Vermilion";
         myObject.greeting("Yves");
         newObject.greeting("Yves");
-
+        newObject.password();
         myObject.Car("Porsche 911");
         myObject.Speed("450 MPH");
+
+        Student myStudent = new Student();
+        myStudent.study();
     }
 }
