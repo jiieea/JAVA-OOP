@@ -9,13 +9,25 @@ public class Main {
         System.out.println("Tutut");
     }
 
+
+//    parent method
+    public void carInfo() {
+        System.out.println("Ford Mustang 6000cc");
+    }
 }
+
 
  class Car extends Main {
     public String carName = "Huracan";
+    public void carPrice() {
+//      call parent method through super keyword
+        super.carInfo();
+        System.out.println("Tutut");
+    }
     public static void main(String[] args) {
         Car car = new Car();
         car.honk();
+        car.carPrice();
         // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
         System.out.println(car.model +" " + car.carName);
         System.out.println(car.engine + " " + car.year);
